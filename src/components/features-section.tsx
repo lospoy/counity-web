@@ -17,7 +17,7 @@ export function Features() {
 
       <div className="mt-14 grid auto-rows-fr grid-cols-1 gap-14 sm:grid-cols-2 lg:grid-cols-3">
         <FeatureCard2
-          title="New Members Feeling Lost?"
+          title="Members Feeling Lost?"
           description="Onboarding Experiences (OX) that guide members seamlessly."
           icon="blocker_1.png"
         />
