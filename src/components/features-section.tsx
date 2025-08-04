@@ -4,47 +4,49 @@ import { FeatureCard2 } from "@/components/feature-card2";
 
 export function Features() {
   return (
-    <section className="container flex flex-col items-center gap-6 py-24 sm:gap-7">
+    <section className="flex flex-col items-left gap-6 py-32 sm:gap-7 bg-primary">
+      <div className="container">
       <div className="flex flex-col gap-3">
-        <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl text-balance text-center">
+        <h2 className="font-heading text-3xl text-secondary font-semibold tracking-tight sm:text-4xl text-balance text-left">
           From Chaos to Community
         </h2>
-      </div>
-      <p className="text-lg text-muted-foreground text-balance max-w-xl text-center">
-        Reweb brings the best of two worlds together: the speed of development of no-code tools, and
-        the flexibility of code.
+        <p className="text-lg text-secondary text-balance max-w-xl text-left">
+        Common growth blockers we remove:
       </p>
-      <div className="mt-6 grid auto-rows-fr grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
+      </div>
+
+      <div className="mt-14 grid auto-rows-fr grid-cols-1 gap-14 sm:grid-cols-2 lg:grid-cols-3">
         <FeatureCard2
-          title="Visual builder"
-          description="Edit HTML, Tailwind &amp; React components with a visual builder and see your changes in real-time."
-          icon={Frame}
+          title="New Members Feeling Lost?"
+          description="Onboarding Experiences (OX) that guide members seamlessly."
+          icon="blocker_1.png"
         />
         <FeatureCard2
-          title="Code Export"
-          description="Once you're done building, export your project to a fully functional Next.js &amp; Tailwind app."
-          icon={Download}
+          title="Engagement Falling Flat?"
+          description="Tailored engagement systems that actually work."
+          icon="blocker_2.png"
         />
         <FeatureCard2
-          title="No lock-in"
-          description="You own the code. Customize with full flexibility and host it anywhere you want."
-          icon={Globe}
+          title="Poor Analytics?"
+          description="Insights-driven dashboards that measure what matters."
+          icon="blocker_3.png"
         />
         <FeatureCard2
-          title="Built on modern tech"
-          description="Reweb works with the most popular frontend technologies like Next.js, Tailwind CSS and shadcn/ui."
-          icon={Sparkles}
+          title="Chaotic Discord?"
+          description="Structured, safe, and visually polished communities."
+          icon="blocker_4.png"
         />
         <FeatureCard2
-          title="Pre-made templates"
-          description="Get started quickly with pre-made templates and sections to build your landing page fast."
-          icon={LayoutPanelLeft}
+          title="Team Gaps"
+          description="We train leaders, build teams, and provide ongoing support."
+          icon="blocker_5.png"
         />
         <FeatureCard2
-          title="AI Assistant"
-          description="Generate and customize components and themes from a promp, image or Figma design."
-          icon={Bot}
+          title="Security Concerns?"
+          description="Our expert security team will implement the latest tech."
+          icon="blocker_6.png"
         />
+      </div>
       </div>
     </section>
   );

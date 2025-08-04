@@ -1,15 +1,13 @@
-import { ArrowRight } from "lucide-react";
+"use client"
+
 import Link from "next/link";
-import { Rocket } from "lucide-react";
-import { Code2 } from "lucide-react";
-import { Lock } from "lucide-react";
-import { Layers } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SocialProofLogo } from "@/components/social-proof-logo";
 import { NavItem } from "@/components/nav-item";
 import { MobileNavbar } from "@/components/mobile-navbar";
 import { MobileNavItem } from "@/components/mobile-nav-item";
 import Image from "next/image";
+import GlassCard from "./glass-card";
 
 export function Hero() {
   return (
@@ -18,12 +16,12 @@ export function Hero() {
       <div 
         className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-70"
         style={{ 
-          backgroundImage: "url('/images/hero_bg.png')",
+          backgroundImage: "url('/images/hero_bg.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
-        }}
-      />
+          }}
+        />
       
       <header className="container flex items-center justify-between gap-10 py-4">
         <Link href="/" className="flex items-center gap-3">
@@ -43,7 +41,7 @@ export function Hero() {
         </div>
       </div>
       <MobileNavbar>
-        <div className="rounded-b-lg bg-background py-4 container text-foreground shadow-xl">
+        <div className="rounded-b-lg bg-background py-4 container text-primary shadow-xl">
           <nav className="flex flex-col gap-1 pt-2">
             <MobileNavItem label="About" href="/about" />
             <MobileNavItem label="Testimonials" href="/testimonials" />
@@ -57,16 +55,16 @@ export function Hero() {
       </MobileNavbar>
     </header>
       <div className="relative">
-        <section className="container flex flex-col items-left gap-8 pb-28 pt-20 sm:gap-10">
+        <section className="container flex flex-col items-left gap-5 pb-28 pt-20 sm:gap-10">
           <h1 className="max-w-2xl text-left font-heading text-4xl font-semibold sm:text-5xl tracking-tight">
             Communities That Stick.<br />Growth That Scales.
           </h1>
-          <p className="max-w-xl text-left text-sm text-muted-foreground sm:text-sm">
+          <p className="max-w-xl text-left text-sm text-primary sm:text-sm">
           Building authentic, engaged, and thriving online communities through data-driven strategies and innovative approaches.
           </p>
-          <div className="grid grid-cols-2 gap-3 max-w-sm">
+          <div className="grid grid-cols-2 gap-3 max-w-xs">
             <Button size="lg" variant="default" asChild className="cursor-pointer border-border">
-              <Link href="#">Let's Connect</Link>
+              <Link href="#">Let's Jam</Link>
             </Button>
           </div>
           <section className="flex flex-col items-left gap-2 py-12">
@@ -86,52 +84,24 @@ export function Hero() {
           </div>
         </section>
         
-        <section className="container flex flex-col items-left gap-6 sm:gap-7">
+        <section className="container flex flex-col items-left gap-6 sm:gap-7 pb-24">
         <div className="flex flex-col gap-3">
           <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl text-balance text-left">
-            Where strategy meets innovation&nbsp;
+            Where strategy meets innovation
           </h2>
         </div>
-        <p className="text-lg text-muted-foreground text-balance max-w-xl text-left">
+        <p className="text-sm text-primary max-w-lg text-left">
         Co/Unity helps Web3 communities thrive by aligning strategy, design, and tech to build purpose driven ecosystems. We don't just support growth, we become part of your team.
         </p>
  
         <div className="mt-6 grid auto-rows-fr grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4">
-      <div>
-        <div className="flex flex-col items-center rounded-xl border p-6 text-left mb-2">
-          <Rocket className="h-10 w-10 text-primary" />
-        </div>
-        <p className="mt-4 text-sm text-muted-foreground text-left">
-          End-to-end community design and management for forward thinking brands.
-        </p>
-      </div>
       
-      <div>
-        <div className="flex flex-col items-center rounded-xl border p-6 text-left mb-2">
-          <Code2 className="h-10 w-10 text-primary" />
-        </div>
-        <p className="mt-4 text-sm text-muted-foreground text-left">
-          Cutting-edge tools and insights that drive meaningful, long-term connections.
-        </p>
-      </div>
       
-      <div>
-        <div className="flex flex-col items-center rounded-xl border p-6 text-left mb-2">
-          <Lock className="h-10 w-10 text-primary" />
-        </div>
-        <p className="mt-4 text-sm text-muted-foreground text-left">
-          Tailored community roadmaps that blend strategy, innovation, and growth.
-        </p>
-      </div>
-      
-      <div>
-        <div className="flex flex-col items-center rounded-xl border p-6 text-left mb-2">
-          <Layers className="h-10 w-10 text-primary" />
-        </div>
-        <p className="mt-4 text-sm text-muted-foreground text-left">
-          Systems that unlock the power of GTC (Go-To-Community) Strategy.
-        </p>
-      </div>
+      <GlassCard icon="co_1.png" text="End-to-end community design and management for forward thinking brands." />
+      <GlassCard icon="co_2.png" text="Cutting-edge tools and insights that drive meaningful, long-term connections." />
+      <GlassCard icon="co_3.png" text="Tailored community roadmaps that blend strategy, innovation, and growth." />
+      <GlassCard icon="co_4.png" text="Systems that unlock the power of GTC (Go-To-Community) Strategy." />
+
     </div>
       </section>
       </div>
