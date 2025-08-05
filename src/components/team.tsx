@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/carousel";
 import { CarouselTestimonialCard } from "@/components/carousel-testimonial-card";
 
-export function Testimonials2() {
+export function Team() {
   return (
     <section className="container flex flex-col items-center gap-6 py-24 sm:gap-7">
       <div className="flex flex-col gap-3">

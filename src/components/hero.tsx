@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { SocialProofLogo } from "@/components/social-proof-logo";
+import { HeroTrustedLogos } from "@/components/hero-trusted-logos";
 import { NavItem } from "@/components/nav-item";
 import { MobileNavbar } from "@/components/mobile-navbar";
 import { MobileNavItem } from "@/components/mobile-nav-item";
@@ -71,12 +71,8 @@ export function Hero() {
             <h2 className="text-sm">
               We are trusted by:
             </h2>
-            <div className="flex w-full gap-8 sm:gap-12 lg:gap-16">
-              <SocialProofLogo image="/images/microsoft.webp" className="h-6 w-16" />
-              <SocialProofLogo image="/images/google.png" className="h-6 w-16" />
-              <SocialProofLogo image="/images/amazon.png" className="h-6 w-16" />
-              <SocialProofLogo image="/images/netflix.png" className="h-6 w-16" />
-              <SocialProofLogo image="/images/facebook.png" className="h-6 w-16" />
+            <div className="flex gap-8 sm:gap-12 lg:gap-16">
+              <HeroTrustedLogos />
             </div>
           </section>
           <div className="relative sm:mt-8">

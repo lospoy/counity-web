@@ -29,11 +29,11 @@ export function CarouselTestimonialCard({
                 <Image src={image} alt="Picture" fill className="rounded-full object-cover" />
               </div>
               <div>
-                <p className="font-semibold leading-none text-foreground">{name}</p>
-                <p className="mt-1 leading-none text-muted-foreground">@{username}</p>
+                <p className="font-semibold leading-none text-primary">{name}</p>
+                <p className="mt-1 leading-none text-primary">@{username}</p>
               </div>
             </div>
-            <p className="text-foreground">{text}</p>
+            <p className="text-primary">{text}</p>
           </CardContent>
         </Card>
       </div>
