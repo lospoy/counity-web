@@ -35,7 +35,7 @@ export function Hero() {
         <div className="hidden items-center gap-2 md:flex">
           <Button asChild size="sm" variant="outline">
             <Link href="#" className="cursor-pointer">
-              Let's Jam
+              Let&apos;s Jam
             </Link>
           </Button>
         </div>
@@ -47,7 +47,7 @@ export function Hero() {
             <MobileNavItem label="Testimonials" href="/testimonials" />
             <Button asChild size="lg" className="mt-2 w-full">
               <Link href="#" className="cursor-pointer">
-                Let's Jam
+                Let&apos;s Jam
               </Link>
             </Button>
           </nav>
@@ -64,7 +64,7 @@ export function Hero() {
           </p>
           <div className="grid grid-cols-2 gap-3 max-w-xs">
             <Button size="lg" variant="default" asChild className="cursor-pointer border-border">
-              <Link href="#">Let's Jam</Link>
+              <Link href="#">Let&apos;s Jam</Link>
             </Button>
           </div>
           <section className="flex flex-col items-left gap-2 py-12">
@@ -87,7 +87,7 @@ export function Hero() {
           </h2>
         </div>
         <p className="text-sm text-primary max-w-lg text-left">
-        Co/Unity helps Web3 communities thrive by aligning strategy, design, and tech to build purpose driven ecosystems. We don't just support growth, we become part of your team.
+        Co/Unity helps Web3 communities thrive by aligning strategy, design, and tech to build purpose driven ecosystems. We don&apos;t just support growth, we become part of your team.
         </p>
  
         <div className="mt-6 grid auto-rows-fr grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4">

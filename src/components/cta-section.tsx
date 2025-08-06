@@ -72,7 +72,7 @@ export function CtaSection() {
               asChild
             >
               <Link href="#" className="relative z-10">
-                <span className="relative z-10">Let's Jam</span>
+                <span className="relative z-10">Let&apos;s Jam</span>
               </Link>
             </Button>
           </div>

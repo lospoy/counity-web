@@ -16,7 +16,7 @@ const GlassTestimonials = ({
   testimonial
 }: GlassTestimonialsProps) => {
   return (
-    <div className="flex flex-col items-left w-full max-w-xl">
+    <div className="flex flex-col items-start w-full max-w-xl">
       {/* Glass Container  */}
       <div className="glass-card relative w-full min-h-64 rounded-3xl backdrop-blur-md border border-white/20 shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden isolate p-8">
         {/* Inner glow layer */}
@@ -58,7 +58,7 @@ const GlassTestimonials = ({
           {/* Testimonial Text */}
           <div className="flex-1">
             <p className="text-base text-primary leading-relaxed text-left">
-              "{testimonial}"
+            &ldquo;{testimonial}&rdquo;
             </p>
           </div>
         </div>
