@@ -91,9 +91,9 @@ export function Hero() {
         </p>
  
         <div className="mt-6 grid auto-rows-fr grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4">
-          <GlassCard iconSize="w-10 h-10" icon="co_1.png" text="End-to-end community design and management for forward thinking brands." />
-          <GlassCard iconSize="w-16 h-16" icon="co_2.png" text="Cutting-edge tools and insights that drive meaningful, long-term connections." />
-          <GlassCard iconSize="w-16 h-16" icon="co_3.png" text="Tailored community roadmaps that blend strategy, innovation, and growth." />
+          <GlassCard iconSize="w-10 h-10" icon="co_1.png" text="End-to-End community strategy for visionary brands." />
+          <GlassCard iconSize="w-16 h-16" icon="co_2.png" text="Cutting-edge tools and insights that drive meaningful connections." />
+          <GlassCard iconSize="w-16 h-16" icon="co_3.png" text="Effective community roadmaps tailored to your goals." />
           <GlassCard iconSize="w-16 h-16" icon="co_4.png" text="Systems that unlock the power of GTC (Go-To-Community) Strategy." />
     </div>
       </section>

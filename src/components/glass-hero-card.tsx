@@ -31,7 +31,7 @@ const GlassCard = ({
       </div>
       
       {/* Text */}
-      <p className="mt-6 text-sm text-primary text-left max-w-xs font-medium leading-relaxed">
+      <p className="mt-6 text-sm text-primary font-medium leading-relaxed w-44">
         {text}
       </p>
     </div>
