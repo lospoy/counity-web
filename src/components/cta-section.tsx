@@ -6,7 +6,6 @@ import { useEffect } from 'react';
 
 export function CtaSection() {
   useEffect(() => {
-    // Add animation styles to head
     const style = document.createElement('style');
     style.textContent = `
       @keyframes gradient-shift {
@@ -27,7 +26,6 @@ export function CtaSection() {
         padding: 2px;
         border-radius: 9999px;
         background: linear-gradient(90deg, #f59e0b, #ec4899, #8b5cf6, #ec4899, #f59e0b);
-        background-size: 400% 100%;
         animation: gradient-shift 5s ease infinite;
         -webkit-mask: 
           linear-gradient(#fff 0 0) content-box, 
@@ -67,12 +65,12 @@ export function CtaSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               size="lg"
-              variant="secondary" 
-              className="relative rounded-full px-8 py-6 text-base font-semibold group gradient-border bg-background hover:bg-transparent transition-all duration-300"
+              variant="default" 
+              className="relative rounded-full px-8 py-6 text-base font-semibold group gradient-border bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-500 hover:bg-transparent transition-all duration-300"
               asChild
             >
               <Link href="#" className="relative z-10">
-                <span className="relative z-10">Let&apos;s Jam</span>
+                <span className="relative z-10">Co/nnect</span>
               </Link>
             </Button>
           </div>
