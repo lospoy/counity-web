@@ -83,7 +83,7 @@ export function CtaSection() {
         <Image src="/images/logo_counity.png" alt="Counity" width={100} height={24} className="h-4 w-auto" />
       </div>
       <div className="flex items-center">
-        <a href="https://x.com/counity_xyz" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
+        <a href="https://x.com/counity_" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground">
           <svg viewBox="0 0 24 24" className="size-7" aria-hidden="true">
             <path
               fill="white"

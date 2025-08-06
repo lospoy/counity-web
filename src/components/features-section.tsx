@@ -1,5 +1,3 @@
-import { Frame, Download, Globe, Sparkles, LayoutPanelLeft, Bot } from "lucide-react";
-
 import { FeatureCard2 } from "@/components/feature-card2";
 
 export function Features() {
@@ -32,7 +30,7 @@ export function Features() {
           icon="blocker_3.png"
         />
         <FeatureCard2
-          title="Chaotic Discord?"
+          title="Chaotic Community?"
           description="Structured, safe, and visually polished communities."
           icon="blocker_4.png"
         />
