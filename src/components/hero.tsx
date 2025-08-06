@@ -7,7 +7,7 @@ import { NavItem } from "@/components/nav-item";
 import { MobileNavbar } from "@/components/mobile-navbar";
 import { MobileNavItem } from "@/components/mobile-nav-item";
 import Image from "next/image";
-import GlassCard from "./glass-card";
+import GlassCard from "./glass-hero-card";
 
 export function Hero() {
   return (
@@ -91,13 +91,10 @@ export function Hero() {
         </p>
  
         <div className="mt-6 grid auto-rows-fr grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-4">
-      
-      
-      <GlassCard icon="co_1.png" text="End-to-end community design and management for forward thinking brands." />
-      <GlassCard icon="co_2.png" text="Cutting-edge tools and insights that drive meaningful, long-term connections." />
-      <GlassCard icon="co_3.png" text="Tailored community roadmaps that blend strategy, innovation, and growth." />
-      <GlassCard icon="co_4.png" text="Systems that unlock the power of GTC (Go-To-Community) Strategy." />
-
+          <GlassCard iconSize="w-10 h-10" icon="co_1.png" text="End-to-end community design and management for forward thinking brands." />
+          <GlassCard iconSize="w-16 h-16" icon="co_2.png" text="Cutting-edge tools and insights that drive meaningful, long-term connections." />
+          <GlassCard iconSize="w-16 h-16" icon="co_3.png" text="Tailored community roadmaps that blend strategy, innovation, and growth." />
+          <GlassCard iconSize="w-16 h-16" icon="co_4.png" text="Systems that unlock the power of GTC (Go-To-Community) Strategy." />
     </div>
       </section>
       </div>
