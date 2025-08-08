@@ -25,7 +25,7 @@ export function Hero() {
       {/* Header */}
       <header className="container flex items-center justify-between gap-10 py-4">
         <Link href="/" className="flex items-center gap-3">
-          <Image src="/images/logo_counity.png" alt="Reweb" width={100} height={100} />
+          <Image src="/images/logo_counity.png" alt="Co/Unity" width={100} height={100} />
         </Link>
 
         {/* Hambuger menu */}
@@ -60,7 +60,9 @@ export function Hero() {
           </p>
           <div className="flex gap-3">
             <Button size="lg" variant="default" asChild className="cursor-pointer border-border">
-              <Link href="#">Let&apos;s Jam</Link>
+              <Link href="https://widgetbot.typeform.com/to/Ln7zWPud?typeform-source=counityxyz">
+                Let&apos;s Jam
+              </Link>
             </Button>
           </div>
         </section>
