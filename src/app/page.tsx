@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { Hero } from "@/components/hero";
 import { Features } from "@/components/features-section";
@@ -9,8 +9,8 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <Features />
-      <Testimonials />
+      {/* <Features />
+      <Testimonials /> */}
       <CtaSection />
     </>
   );

@@ -1,16 +1,16 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
-import { Inter, Rubik } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
 import { cn } from "@/lib/utils";
 
-const fontSans = Inter({
+const fontSans = Montserrat({
   variable: "--font-sans",
   subsets: ["latin"],
 });
 
-const fontHeading = Rubik({
+const fontHeading = Montserrat({
   variable: "--font-heading",
   subsets: ["latin"],
 });
@@ -31,7 +31,7 @@ export default function RootLayout({
         className={cn(
           "min-h-screen font-sans antialiased",
           fontSans.variable,
-          fontHeading.variable
+          fontHeading.variable,
         )}
       >
         {children}

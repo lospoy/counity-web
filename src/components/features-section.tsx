@@ -2,13 +2,13 @@ import { FeatureCard2 } from "@/components/feature-card2";
 
 export function Features() {
   return (
-    <section className="flex flex-col items-left gap-6 py-32 sm:gap-7 bg-primary">
+    <section className="items-left flex flex-col gap-6 bg-primary py-32 sm:gap-7">
       <div className="container">
       <div className="flex flex-col gap-3">
-        <h2 className="font-heading text-3xl text-secondary font-semibold tracking-tight sm:text-4xl text-balance text-left">
+        <h2 className="text-balance text-left font-heading text-3xl font-semibold tracking-tight text-secondary sm:text-4xl">
           From Chaos to Community
         </h2>
-        <p className="text-lg text-secondary text-balance max-w-xl text-left">
+        <p className="max-w-xl text-balance text-left text-lg text-secondary">
         Common growth blockers we remove:
       </p>
       </div>

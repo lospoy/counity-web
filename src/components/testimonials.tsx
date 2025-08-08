@@ -82,9 +82,9 @@ export function Testimonials() {
           opacity: 0.7
         }}
       />
-      <div className="w-full relative z-10 flex flex-col gap-6 sm:gap-7">
-        <div className="container flex flex-col gap-3 text-left px-4">
-          <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl text-balance">
+      <div className="relative z-10 flex w-full flex-col gap-6 sm:gap-7">
+        <div className="container flex flex-col gap-3 px-4 text-left">
+          <h2 className="text-balance font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
             Trusted by Leading Organizations
           </h2>
           <p className="text-lg text-primary">
@@ -97,15 +97,15 @@ export function Testimonials() {
             opts={{ loop: true, align: "center" }} 
             className="w-full"
           >
-            <CarouselContent className="pb-4 py-3 -ml-1">
+            <CarouselContent className="-ml-1 py-3 pb-4">
               {testimonials.map((testimonial, index) => (
                 <CarouselItem 
                   key={index} 
-                  className="basis-[60%] md:basis-[50%] lg:basis-[40%] pl-1"
+                  className="basis-3/5 pl-1 md:basis-[50%] lg:basis-2/5"
                 >
                   <div
                     className={cn(
-                      "transition-all duration-500 flex justify-center",
+                      "flex justify-center transition-all duration-500",
                       {
                         "scale-75 opacity-70": index !== current,
                         "scale-100 opacity-100": index === current,
@@ -136,7 +136,7 @@ export function Testimonials() {
                 key={index}
                 onClick={() => api?.scrollTo(index)}
                 className={cn(
-                  "h-3 w-3 rounded-full border-2 transition-all duration-200 hover:scale-110",
+                  "size-3 rounded-full border-2 transition-all duration-200 hover:scale-110",
                   {
                     "bg-primary border-primary": current === index,
                     "bg-transparent border-primary/40 hover:border-primary/60": current !== index,

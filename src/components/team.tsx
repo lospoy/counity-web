@@ -10,12 +10,12 @@ export function Team() {
   return (
     <section className="container flex flex-col items-center gap-6 py-24 sm:gap-7">
       <div className="flex flex-col gap-3">
-        <span className="font-bold uppercase text-primary text-center">Testimonials</span>
-        <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl text-balance text-center">
+        <span className="text-center font-bold uppercase text-primary">Testimonials</span>
+        <h2 className="text-balance text-center font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
           Meet Out Team
         </h2>
       </div>
-      <p className="text-lg text-muted-foreground text-balance max-w-lg text-center">
+      <p className="max-w-lg text-balance text-center text-lg text-muted-foreground">
         The heart and souls behind CO/UNITY
       </p>
       <Carousel opts={{ align: "start", loop: true }} className="mt-6 w-full px-4 xl:px-0">

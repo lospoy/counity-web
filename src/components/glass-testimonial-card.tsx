@@ -16,55 +16,55 @@ const GlassTestimonials = ({
   testimonial
 }: GlassTestimonialsProps) => {
   return (
-    <div className="flex flex-col items-start w-full max-w-xl">
+    <div className="flex w-full max-w-xl flex-col items-start">
       {/* Glass Container  */}
-      <div className="glass-card relative w-full min-h-64 rounded-3xl backdrop-blur-md border border-white/20 shadow-2xl transition-all duration-300 cursor-pointer overflow-hidden isolate p-8">
+      <div className="glass-card relative isolate min-h-64 w-full cursor-pointer overflow-hidden rounded-3xl border border-white/20 p-8 shadow-2xl backdrop-blur-md transition-all duration-300">
         {/* Inner glow layer */}
-        <div className="absolute inset-0 rounded-3xl shadow-inner border-1 border-white/90" />
+        <div className="border-1 absolute inset-0 rounded-3xl border-white/90 shadow-inner" />
         
         {/* Content container */}
-        <div className="relative z-10 flex flex-col h-full ">
+        <div className="relative z-10 flex h-full flex-col ">
           {/* Header with profile, name/position, and company logo */}
-          <div className="flex items-center justify-between mb-6">
+          <div className="mb-6 flex items-center justify-between">
             {/* Profile Picture */}
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
               <img
                 src={profilePicture.startsWith('/') ? profilePicture : `/images/${profilePicture}`}
                 alt={`${name} profile`}
-                className="w-14 h-14 rounded-full object-cover border-2 border-white/90 shadow-lg"
+                className="size-14 rounded-full border-2 border-white/90 object-cover shadow-lg"
               />
             </div>
             
             {/* Name and Position */}
-            <div className="flex-1 mx-6 text-left">
-              <h3 className="text-base font-semibold text-primary leading-tight">
+            <div className="mx-6 flex-1 text-left">
+              <h3 className="text-base font-semibold leading-tight text-primary">
                 {name}
               </h3>
-              <p className="text-sm text-primary opacity-80 mt-1">
+              <p className="mt-1 text-sm text-primary opacity-80">
                 {position}
               </p>
             </div>
             
             {/* Company Logo */}
-            <div className="flex-shrink-0">
+            <div className="shrink-0">
               <img
                 src={companyLogo.startsWith('/') ? companyLogo : `/images/hero-trusted-logos/${companyLogo}`}
                 alt="Company logo"
-                className="w-24 h-24 object-contain drop-shadow-md"
+                className="size-24 object-contain drop-shadow-md"
               />
             </div>
           </div>
           
           {/* Testimonial Text */}
           <div className="flex-1">
-            <p className="text-base text-primary leading-relaxed text-left">
+            <p className="text-left text-base leading-relaxed text-primary">
             &ldquo;{testimonial}&rdquo;
             </p>
           </div>
         </div>
         
         {/* Additional glass reflection on top edge */}
-        <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-white/10 to-transparent rounded-t-3xl" />
+        <div className="absolute inset-x-0 top-0 h-1/3 rounded-t-3xl bg-gradient-to-b from-white/10 to-transparent" />
       </div>
     </div>
   );

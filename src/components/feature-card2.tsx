@@ -10,7 +10,7 @@ interface FeatureCard2Props {
 
 export function FeatureCard2({ title, description, icon, className }: FeatureCard2Props) {
   return (
-    <Card className={cn("shadow-lg rounded-2xl aspect-square", className)}>
+    <Card className={cn("aspect-square rounded-2xl shadow-lg", className)}>
       <CardContent className="flex flex-col items-center gap-2 p-8">
         <div className="p-4">
           <img 

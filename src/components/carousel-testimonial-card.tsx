@@ -22,7 +22,7 @@ export function CarouselTestimonialCard({
   return (
     <CarouselItem className={cn("md:basis-1/2 lg:basis-1/3", className)}>
       <div className="h-full p-1">
-        <Card className="shadow-md h-full">
+        <Card className="h-full shadow-md">
           <CardContent className="flex flex-col items-start gap-5 p-7">
             <div className="flex items-center gap-4">
               <div className="relative size-10">

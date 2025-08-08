@@ -1,37 +1,35 @@
-const GlassCard = ({ 
-  icon, 
-  text, 
-  iconSize = "w-16 h-16" 
-}: { 
-  icon: string; 
-  text: string; 
+const GlassCard = ({
+  icon,
+  text,
+  iconSize = "w-16 h-16",
+}: {
+  icon: string;
+  text: string;
   iconSize?: string;
 }) => {
   return (
-    <div className="flex flex-col items-left">
+    <div className="flex flex-row items-center lg:flex-col lg:items-start">
       {/* Glass Container */}
-      <div className="glass-hero-card relative w-40 h-40 rounded-3xl backdrop-blur-md border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 cursor-pointer overflow-hidden isolate">
+      <div className="glass-hero-card hover:shadow-3xl relative isolate aspect-square size-16 shrink-0 cursor-pointer overflow-hidden rounded-3xl border border-white/20 shadow-2xl backdrop-blur-md transition-all duration-300 hover:scale-105 sm:size-24 md:size-32 lg:size-40">
         {/* Inner glow layer */}
         <div className="absolute inset-0 rounded-3xl shadow-inner " />
-        
         {/* Glass shine highlights */}
         <div className="absolute inset-0 rounded-3xl bg-gradient-to-br via-transparent to-transparent" />
-        
         {/* Icon container */}
-        <div className="relative z-10 flex items-center justify-center w-full h-full">
+        <div className="relative z-10 flex size-full items-center justify-center">
           <img
-            src={icon.startsWith('/') ? icon : `/images/${icon}`}
+            src={icon.startsWith("/") ? icon : `/images/${icon}`}
             alt="Icon"
-            className={`${iconSize} object-contain drop-shadow-lg`}
+            className={`${iconSize} scale-[0.6] object-contain drop-shadow-lg sm:scale-90 md:scale-100`}
           />
         </div>
-        
+
         {/* Additional glass reflection on top edge */}
-        <div className="absolute top-0 left-0 right-0 h-1/3 bg-gradient-to-b from-white/10 to-transparent rounded-t-3xl" />
+        <div className="absolute inset-x-0 top-0 h-1/3 rounded-t-3xl bg-gradient-to-b from-white/10 to-transparent" />
       </div>
-      
+
       {/* Text */}
-      <p className="mt-6 text-sm text-primary font-medium leading-relaxed w-44">
+      <p className="ml-6 min-w-0 flex-1 text-sm font-medium leading-relaxed text-primary lg:ml-0 lg:mt-6 lg:w-44 lg:flex-none">
         {text}
       </p>
     </div>
