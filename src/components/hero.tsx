@@ -11,7 +11,7 @@ import GlassCard from "./glass-hero-card";
 
 export function Hero() {
   return (
-    <div className="relative">
+    <div className="relative overflow-x-hidden">
 
       <div 
         className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat opacity-70"
@@ -67,20 +67,17 @@ export function Hero() {
               <Link href="#">Let&apos;s Jam</Link>
             </Button>
           </div>
-          <section className="flex flex-col items-left gap-2 py-12">
-            <h2 className="text-sm">
-              We are trusted by:
-            </h2>
-            <div className="flex gap-8 sm:gap-12 lg:gap-16">
-              <HeroTrustedLogos />
-            </div>
-          </section>
-          <div className="relative sm:mt-8">
-            <div className="absolute inset-0 -z-10 bg-primary/20 [filter:blur(180px)]" />
-          </div>
         </section>
         
-        <section className="container flex flex-col items-left gap-6 sm:gap-7 pb-24">
+        {/* Full-width trusted logos section */}
+        <div className="w-full py-12">
+          <h2 className="text-sm mb-4 container">
+            We are trusted by:
+          </h2>
+          <HeroTrustedLogos />
+        </div>
+        
+        <section className="container flex flex-col items-left gap-6 sm:gap-7 pb-24 pt-12">
         <div className="flex flex-col gap-3">
           <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl text-balance text-left">
             Where strategy meets innovation
