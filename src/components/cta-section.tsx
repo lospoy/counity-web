@@ -25,10 +25,9 @@ export function CtaSection() {
         inset: 0;
         padding: 2px;
         border-radius: 9999px;
-        background: linear-gradient(90deg, #f59e0b, #ec4899, #8b5cf6, #ec4899, #f59e0b);
-        animation: gradient-shift 5s ease infinite;
-        -webkit-mask: 
-          linear-gradient(#fff 0 0) content-box, 
+        background: linear-gradient(90deg, #f59e0b, #ec4899, #8b5cf6);
+        -webkit-mask:
+          linear-gradient(#fff 0 0) content-box,
           linear-gradient(#fff 0 0);
         -webkit-mask-composite: xor;
         mask-composite: exclude;
@@ -45,15 +44,8 @@ export function CtaSection() {
   }, []);
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-to-br from-primary to-primary/90 py-28 text-primary-foreground md:py-36">
-        <div
-          className="absolute inset-0 opacity-5"
-          style={{
-            backgroundImage: 'url("/images/hero_bg.jpg")',
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        ></div>
+      <section className="relative overflow-hidden bg-black py-28 text-gray-100 md:py-36">
+        {/* Removed image background */}
 
         <div className="container relative z-10">
           <div className="mx-auto max-w-3xl px-4 text-center">
@@ -65,15 +57,15 @@ export function CtaSection() {
               together?
             </h2>
 
-            <p className="mx-auto mb-8 max-w-2xl text-lg text-primary-foreground/90 md:text-xl">
+            <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-300 md:text-xl">
               Join thousands of creators and innovators in the Co/Unity ecosystem
             </p>
 
             <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button
                 size="lg"
-                variant="default"
-                className="gradient-border group relative rounded-full bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-500 px-8 py-6 text-base font-semibold transition-all duration-300 hover:bg-transparent"
+                variant="ghost"
+                className="gradient-border group relative rounded-full !bg-transparent px-8 py-6 text-base font-semibold text-white transition-all duration-300 hover:bg-gradient-to-r hover:from-yellow-400 hover:via-pink-500 hover:to-purple-500 hover:text-black"
                 asChild
               >
                 <Link

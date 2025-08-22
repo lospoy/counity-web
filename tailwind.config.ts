@@ -71,14 +71,14 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
-        'infinite-scroll': {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-50%)' },
+        "infinite-scroll": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
         },
       },
       animation: {
-        'infinite-scroll': 'infinite-scroll 30s linear infinite',
-        'pause': 'infinite-scroll 30s linear infinite paused',
+        "infinite-scroll": "infinite-scroll 30s linear infinite",
+        pause: "infinite-scroll 30s linear infinite paused",
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],

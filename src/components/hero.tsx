@@ -25,7 +25,7 @@ export function Hero() {
       {/* Header */}
       <header className="container flex items-center justify-between gap-10 py-4">
         <Link href="/" className="flex items-center gap-3">
-          <Image src="/images/logo_counity.png" alt="Co/Unity" width={100} height={100} />
+          <Image src="/images/logo_counity.png" alt="Co/Unity" width={140} height={140} />
         </Link>
 
         {/* Hambuger menu */}
@@ -49,7 +49,7 @@ export function Hero() {
 
       <div className="relative">
         <section className="container flex flex-col items-start gap-5 pb-28 pt-20 sm:gap-10">
-          <h1 className="max-w-2xl text-left font-heading text-4xl font-semibold tracking-tight sm:text-5xl">
+          <h1 className="max-w-2xl text-left font-heading text-4xl tracking-tight sm:text-5xl">
             Communities That Stick.
             <br />
             Growth That Scales.
@@ -75,7 +75,7 @@ export function Hero() {
 
         <section className="container flex flex-col items-start gap-6 pb-24 pt-12 sm:gap-7">
           <div className="flex flex-col gap-3">
-            <h2 className="text-balance text-left font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+            <h2 className="text-balance text-left font-heading text-3xl tracking-tight sm:text-4xl">
               Where strategy meets innovation
             </h2>
           </div>
@@ -85,7 +85,7 @@ export function Hero() {
             team.
           </p>
 
-          <div className="mt-6 grid grid-cols-1 justify-items-center gap-7 self-center sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-6 grid grid-cols-1 gap-7 self-center sm:grid-cols-2 lg:grid-cols-4">
             <GlassCard
               iconSize="w-10 h-10"
               icon="co_1.png"
